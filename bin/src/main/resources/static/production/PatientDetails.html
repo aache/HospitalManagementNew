@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Surya Hospital </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- Datatables -->
+    <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+    
+     <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <<div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Sale Management</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>Deepak</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+            <br />
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <ul class="nav side-menu">
+                  
+                  <li><a href="index.html"><i class="fa fa-home"></i> Home</a>
+				  <li><a href="SaleDetails.html"><i class="fa fa-edit"></i> Appointment</a>
+				   <li><a><i class="fa fa-edit"></i> Waiting List</a>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i> Patient Details</a>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i> Billing Details</a>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i> Bed Management</a>
+                  </li>
+                  
+                  <li><a><i class="fa fa-bar-chart-o"></i> Reports <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="chartjs.html">Payment Pending Patient Report</a></li>
+                      <li><a href="chartjs2.html">Bed Allocated Report</a></li>
+                       <li><a href="chartjs2.html">Patient Details Report</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+			 <div class="menu_section">
+                <ul class="nav side-menu">
+				   <li><a><i class="fa fa-sitemap"></i> Masters <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a>Geographical Masters<span class="fa fa-chevron-down"></span></a>
+                          <ul class="nav child_menu">
+                            <li class="sub_menu"><a href="level2.html">Country</a>
+                            </li>
+                            <li><a href="#level2_1">State</a>
+                            </li>
+                            <li><a href="#level2_2">City</a>
+                            </li>
+                          </ul>
+                        </li>
+					    <li><a href="#level1_1">Doctor Details</a>
+						<li><a href="#level1_1">Fee Details</a>
+						<li><a href="#level1_1">Medicine Master</a>
+						<li><a href="#level1_1">Medical Test Master</a>
+						<li><a href="#level1_1">Time Slot</a>
+						<li><a href="#level1_1">Symptom</a>
+						
+                    </ul>
+                  </li> 
+                  <li><a><i class="fa fa-user"></i> User Management<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+					  <li><a href="#">User Type Details</a></li>
+                      <li><a href="#">User Details</a></li>
+                    </ul>
+                  </li>
+				   <li><a><i class="fa fa-edit"></i> Role Management<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+					  <li><a href="#">Add Role</a></li>
+                      <li><a href="#">Asssign Role To User</a></li>
+					   <li><a href="#">Asssign Role To Company</a></li>
+                    </ul>
+                  </li>
+				 				  
+                 </ul>
+				
+
+            </div>
+			
+			
+              </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img.jpg" alt="">John Doe
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Profile</a></li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Settings</span>
+                      </a>
+                    </li>
+                    <li><a href="javascript:;">Help</a></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+         <!--End Table content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="clearfix"></div>
+            <div class="row">
+              <div class="clearfix"></div>
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+               <div class="dashboard_graph">
+                <div class="row x_title">
+                  <div class="col-md-6">
+                    <h3> Sale Details</h3>
+                  </div>
+                  <div class="col-md-6">
+                    <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+                      <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                      <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
+                    </div>
+                  </div>
+                </div>
+               </div>
+                  <div class="x_content">
+                    <div class="table-responsive">
+                      <table id="datatable-responsive"class="table table-striped jambo_table bulk_action">
+                        <thead>
+                          <tr class="headings">
+                            <th class="column-title">Sale Date </th>
+                            <th class="column-title">First Name </th>
+                            <th class="column-title">Last Name </th>
+                            <th class="column-title">Address </th>
+                            <th class="column-title">City </th>
+                            <th class="column-title">State </th>
+                            <th class="column-title">Zip Code </th>
+                            <th class="column-title">Phone Number	 </th>
+                            <th class="column-title">Amt (In $) </th>
+                            <th class="column-title">Card Type	 </th>
+                            <th class="column-title">Last 4 Digit  </th>
+                            <th class="column-title">Email ID	 </th>
+                            <th class="column-title">Verification/Docusign	 </th>
+                            <th class="column-title">Status </th>
+                            <th class="column-title">Plan Type	 </th>
+                            <th class="column-title">Comment </th>
+                            <th class="column-title no-link last"><span class="nobr">Action</span>
+                            </th>
+                           
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr class="even pointer">
+                            <td class=" ">2018/07/25 10:15</td>
+                            <td class=" ">Angelica</td>
+                            <td class=" ">Ramos</td>
+                            <td class=" ">Near mg road</td>
+                            <td class=" ">Jalgaon</td>
+                            <td class=" ">Maharashtra</td>
+                            <td class=" ">India</td>
+                            <td class=" ">410001</td>
+                            <td class="a-right a-right ">$9.45</td>
+                            <td class=" ">Master Card</td>
+                            <td class=" ">XXXX XXXX XXXX 4567</td>
+                            <td class=" ">md.williamson@gmail.com</td>
+                            <td class=" ">abc</td>
+                            <td class=" ">Pending</td>
+                            <td class=" ">Advance Plan</td>
+                            <td class=" ">sale Pending</td>
+                            <td class=" last"><a href="#">View</a>
+                            </td>
+                          </tr>
+                          <tr class="odd pointer">
+                           <td class=" ">2018/07/25 10:15</td>
+                            <td class=" ">Zorita</td>
+                            <td class=" ">Serrano</td>
+                            <td class=" ">garvare chowk </td>
+                            <td class=" ">Surat</td>
+                            <td class=" ">Gujrat</td>
+                            <td class=" ">India</td>
+                            <td class=" ">501001</td>
+                            <td class="a-right a-right ">$6.45</td>
+                            <td class=" ">Master Card</td>
+                            <td class=" ">XXXX XXXX XXXX 4215</td>
+                            <td class=" ">asx.williamson@gmail.com</td>
+                            <td class=" ">abc</td>
+                            <td class=" ">success</td>
+                            <td class=" ">Basic</td>
+                            <td class=" ">sale has been done</td>
+                            <td class=" last"><a href="#">View</a>
+                            </td>
+                          </tr>
+                          <tr class="even pointer">
+                            
+                            <td class=" ">2018/07/25 10:15</td>
+                            <td class=" ">Tiger</td>
+                            <td class=" ">Nixon</td>
+                            <td class=" ">Near abc chowk opp muncipal corporation</td>
+                            <td class=" ">Pune</td>
+                            <td class=" ">Maharashtra</td>
+                            <td class=" ">India</td>
+                            <td class=" ">400001</td>
+                            <td class="a-right a-right ">$7.45</td>
+                            <td class=" ">Master Card</td>
+                            <td class=" ">XXXX XXXX XXXX 1234</td>
+                            <td class=" ">b.williamson@gmail.com</td>
+                            <td class=" ">abc</td>
+                            <td class=" ">success</td>
+                            <td class=" ">Basic</td>
+                            <td class=" ">sale has been done</td>
+                            <td class=" last"><a href="#">View</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+					<!-- Table Content End -->		
+					
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Table content -->
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Datatables -->
+    <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+    <script src="../vendors/jszip/dist/jszip.min.js"></script>
+    <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+ <!-- bootstrap-daterangepicker New Added For Date daterangepicker-->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+
+  </body>
+</html>
