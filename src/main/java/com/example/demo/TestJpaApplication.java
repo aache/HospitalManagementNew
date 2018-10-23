@@ -24,7 +24,8 @@ public class TestJpaApplication {
 	  }
 	
 	
-	public static void main(String[] args) {
-		SpringApplication.run(TestJpaApplication.class, args);
+	public static void main(String[] argss) {
+		
+		SpringApplication.run(TestJpaApplication.class, argss);
 	}
 }
